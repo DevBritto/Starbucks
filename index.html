@@ -14,31 +14,49 @@
 </head>
 
 <body>
+
+    <div class="circulo"></div>
+
+
     <img src="./images/logo.png" class="logo">
 
     <div class="conteudo">
-        <div>
-            <h2>It's not just Coffe<br> It's <span>Starbucks</span> </h2>
+        <div class="caixa-texto">
+            <h2>It's not just Coffee<br> It's <span>Starbucks</span> </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi adipisci ipsa illo nihil, laboriosam
                 velit. Obcaecati praesentium ducimus laboriosam quam maxime placeat iure asperiores! Optio, id
                 perspiciatis.
                 Provident, sit!</p>
-            <button>Clique em mim</button>
+            <button>Deixe o seu like!</button>
         </div>
 
-        <div>
+        <div class="caixa-imagem">
             <img src="./images/img1.png" class="starbucks">
         </div>
     </div>
 
-    <div>
-        <img src="./images/thumb1.png" alt="" class="botao-menu">
-        <img src="./images/thumb2.png" alt="" class="botao-menu">
-        <img src="./images/thumb3.png" alt="" class="botao-menu">
+    <div class="menu">
+        <img src="./images/thumb1.png" alt="" class="botao-menu" onclick="trocaImagem('./images/img1.png'); fundo('#017143')">
+        <img src="./images/thumb2.png" alt="" class="botao-menu" onclick="trocaImagem('./images/img2.png'); fundo('#eb7495')">
+        <img src="./images/thumb3.png" alt="" class="botao-menu" onclick="trocaImagem('./images/img3.png'); fundo('#d752b1')">
     </div>
 
 
 
 </body>
+
+<script>
+    let imagem = document.querySelector('.starbucks')
+    let corDeFundo = document.querySelector('.circulo')
+
+    const trocaImagem = (endereco) => {
+        imagem.src = endereco
+    }
+
+    const fundo = (cor) => {
+        corDeFundo.style.background = cor
+    }
+    
+</script>
 
 </html>
