@@ -99,3 +99,65 @@ button {
     z-index: -1;
 }
 
+@media screen and (max-width:890px) {
+
+body {
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.caixa-texto {
+    display: block;
+    margin: auto;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+span {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.circulo {
+    display: block;
+    clip-path: circle(20% at right 30%);
+    z-index: -1;
+    position: absolute;
+    top: 90px;
+
+}
+
+.starbucks{
+    width: 115px;
+    position: absolute;
+    right: 0px;
+    top: 163px;
+}
+
+.caixa-imagem {
+    display: block;
+
+    
+}
+
+}    
+
